@@ -1,0 +1,13 @@
+#payment legend {
+    
+     text-align: center;   
+    }
+
+    #payment {
+    
+    width: px;
+}    
+
+#payment input[type="text"] {
+     float: right;
+}

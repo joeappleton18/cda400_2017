@@ -1,0 +1,64 @@
+
+.box {
+    /* STEP1 set up a basic box  discuss about setting width and height as per the slides*/
+    /* Note, the box is not flush against the side - the browser default assign styles*/ 
+    /* box is 500px x 500px */
+    
+    width: 500px;
+    height: 500px;
+    background-color: black;
+    color: red;
+    padding-left: 50px;
+    
+    
+    
+    /* STEP2 add some padding */
+    /* box is now (500px + 50px + 50px) x (500px + 50px +50px) = 600px x 600px
+    
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-top: 50px; 
+    
+    Transition to shorthand 
+    
+    padding : 50px 50px 50px 50px;    
+    */
+    
+    /*padding: 50px;*/
+    
+    /* STEP3 add a border */
+    /* box is now  (600px + 50px +50px) x  (600px + 50px +50px)  = 700px
+    border: 50px solid green;
+    
+
+    
+    
+    
+    
+    
+    
+    
+    /**
+   
+    
+    /** Margin **/
+    
+    /*
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+    /** Padding **/
+    
+    /*
+    
+    
+    
+    background-color: black;
+    color: red;
+    
+    /*border: 200px solid green;*/
+}
+
