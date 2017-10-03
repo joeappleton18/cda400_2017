@@ -4,7 +4,7 @@
 ##1. Create your timetable
 
 Create a new file called `timetable.html` and save it in the folder
-`session2` within your `U` drive internet tech folder. Recreate your timetable using the table tags and attributes discussed in todays the lesson. It should resemble the example below:
+`session2` on your [cloud9](https://c9.io/) instance. Recreate your timetable using the table tags and attributes discussed in todays the lesson. It should resemble the example below:
 
 ![time table](assets/timetable.png)
 
@@ -23,16 +23,8 @@ Use the [W3C Validator](https://validator.w3.org/) to ensure all your work so fa
 
 - Install git on your computer  [git download](https://git-scm.com/)
 - Sign up to [GitHub](www.github.com)
-- Work out how to create a [https://pages.github.com/](https://pages.github.com/)
-
-- Within the gitHub pages directory on your local computer create a index.html file 
-- Work out how to download save and include [this](https://github.com/joeappleton18/joeappleton18.github.io/blob/master/scripts/main.js) script into index.html. You should try and include it as a external javascript file 
-
-- If you've included the script properly, every time you include the tag below into your index.html file, you'll see a 200*200px streaming video from you webcam:  
-
-   ```html <video class="video" width="200" height="200" autoplay>```
- 
-
+- Work out how to create a [https://pages.github.com/](https://pages.github.com/). Your work should be published to gitHub pages.
+- Investigate how to embed a live webcam video into a HTML page. You can start [here](https://www.html5rocks.com/en/tutorials/getusermedia/intro/)
 - Using a table create a webcam mosaic like mine below:
 
 ![](assets/web_cam_picture.png)
