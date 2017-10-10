@@ -1,0 +1,61 @@
+ /** let's style some HTML selectors/tags, this is a comment BTW **/
+	
+	/**  styles for everything in the body**/
+	body {
+	    font-family: arial, helvetica, sans-serif; /** helvetica and sans-serif are fall back
+	                                                    fonts. **/
+	    
+	}
+	
+	h1, caption {     
+	    text-align: center;
+	    /** color is the text colour**/
+	    color:#B8E6B8;   /** the colour code is hex, use a colour picker 
+	                         http://www.w3schools.com/tags/ref_colorpicker.asp **/
+	    text-decoration: underline;
+	}
+	
+	
+	table,th, td  {  /** note how we can group elements that share styles **/
+	    border: 1px dashed grey;
+	    margin: 0px auto; /** used to align the table to the centre **/
+	}
+	
+	/** let's style some id's we use # symbol # **/
+	
+	/** A little advanced, this makes sure the site is a standard width on all monitors **/
+	#wrapper{
+	    width: 920px;
+	    margin: 0 auto; /** short hand, used to centre the wrapper **/
+	    border: 1px solid #000000;  
+	}
+	
+	#header {
+	    /** give the header dive a 1pixel width border that's solid and red(#FF0000) **/
+	    border: 1px solid #FF0000;  
+	}
+	
+	#section {
+	    border: 1px solid #FF0000;
+	    margin-top: 10px;
+	    
+	}
+	
+	#footer {
+	    background-color: #FF0000;
+	    color: #FFFFFF; /** font colour = white(#FF0000) **/
+	    text-align: center;
+	}
+	
+	.hour {
+	    background-color: #CCCCCC;
+	}
+	
+	h3 {
+	    background-color: #FFFFFF
+	}
+	
+	.day {
+	     color: #FF0000
+	}
+
