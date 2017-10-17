@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Week 3 - Using Styles and Identifying Different Elements · GitBook</title>
+        <title>Practical · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -57,10 +57,8 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="notes.html" />
     
-    
-    <link rel="prev" href="../week2/practical.html" />
+    <link rel="prev" href="notes.html" />
     
 
     </head>
@@ -205,9 +203,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.5" data-path="introduction.html">
+        <li class="chapter " data-level="1.5" data-path="../week3/introduction.html">
             
-                <a href="introduction.html">
+                <a href="../week3/introduction.html">
             
                     
                     Week 3 - Using Styles and Identifying Different Elements
@@ -219,9 +217,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="notes.html">
+        <li class="chapter " data-level="1.5.1" data-path="../week3/notes.html">
             
-                <a href="notes.html">
+                <a href="../week3/notes.html">
             
                     
                     Notes
@@ -232,9 +230,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" data-path="practical.html">
+        <li class="chapter " data-level="1.5.2" data-path="../week3/practical.html">
             
-                <a href="practical.html">
+                <a href="../week3/practical.html">
             
                     
                     Practical
@@ -257,9 +255,9 @@
         
         
     
-        <li class="chapter " data-level="2.1" data-path="../week4/notes.html">
+        <li class="chapter " data-level="2.1" data-path="notes.html">
             
-                <a href="../week4/notes.html">
+                <a href="notes.html">
             
                     
                     Week 4 - CSS and Layouts
@@ -271,9 +269,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.1.1" data-path="../week4/notes.html">
+        <li class="chapter " data-level="2.1.1" data-path="notes.html">
             
-                <a href="../week4/notes.html">
+                <a href="notes.html">
             
                     
                     Notes
@@ -284,9 +282,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.2" data-path="../week4/practical.html">
+        <li class="chapter active" data-level="2.1.2" data-path="practical.html">
             
-                <a href="../week4/practical.html">
+                <a href="practical.html">
             
                     
                     Practical
@@ -332,7 +330,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >Week 3 - Using Styles and Identifying Different Elements</a>
+        <a href="../.." >Practical</a>
     </h1>
 </div>
 
@@ -347,12 +345,51 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="week-3---welcome-to-the-third-week">Week 3 - Welcome to the third week</h1>
-<p>By the end of this week, you will be able to:</p>
+                                <h1 id="session-4-tasks">Session 4 Tasks</h1>
+<p>Please only use external styles for this task. </p>
+<h2 id="task-1----style-up-your-week-one-page">Task 1  - Style up your week one page</h2>
+<p><strong>Set up</strong>  </p>
 <ul>
-<li>Identify difference between inline elements and block level elements </li>
-<li>Use <code>classes</code> and <code>id</code> tags to allow the grouping and identification of elements </li>
-<li>Apply styles to elements using external style rules</li>
+<li>Inside your <code>internet_tech</code> directory create a <code>session4</code> folder. </li>
+<li>Copy your webpage from <strong>session1</strong> into the <code>session4</code> folder you just created. </li>
+<li>Create a new style sheet and <code>&lt;link&gt;</code> it into your webpage. It&apos;s a good idea to place the style sheet in a new folder e.g. <code>css</code>. </li>
+</ul>
+<p><strong>Let&apos;s make your page look a little but more presentable</strong></p>
+<p>Please go wild and style the page as much as you like, but as a minimum I want to see you complete the below tasks. Once done your page should resemble the layout below:</p>
+<p><img src="assets/task_image_new.jpg" alt="site_layout"></p>
+<ul>
+<li>Section up your site using a minimum of 3 <code>&lt;div&gt;&apos;s</code>#left_nav<code>,</code>#section<code>and</code>#wrapper` which holds all the content.</li>
+<li>To start with give <code>#left_nav</code> a width of <strong>20%</strong> and <code>#section</code> a width of <strong>80%</strong>.</li>
+<li>Give <code>#wrapper</code> a width of <strong>80%</strong> and centre align it using <code>#wrapper {margin: 0 auto;}</code> </li>
+<li>Add a different <code>background-color</code> to  <code>#left_nav</code> and <code>#section</code>.</li>
+<li>Use <code>float</code> to position  <code>#left_nav</code> and <code>#section</code> side by side, as per the mock up above. </li>
+<li>Use a <code>&lt;ul&gt;...&lt;/ul&gt;</code> to create a basic navigation list in <code>#left_nav</code>. Have at least 3 links, but you don&apos;t need to create the corresponding pages. Here&apos;s how to create a placeholder link: <code>&lt;a href=&quot;#&quot;&gt;  Home &lt;/a&gt;</code></li>
+<li><p>Apply some pseudo classes to your links, so they change colour based on their status. Below is an example: </p>
+<pre><code>       a:link {color:#FF0000;}      /* unvisited link */   
+       a:visited {color:#00FF00;}   /* visited link */   
+       a:hover {color:#FF00FF;}     /* mouse over link */   
+          a:active {color:#0000FF;}    /* selected link */  
+</code></pre></li>
+<li><p>Resize the image and centre align it.</p>
+</li>
+<li>Remove the bullet points from the <code>&lt;ul&gt;</code> nav list <strong>(Optional)</strong> </li>
+</ul>
+<h2 id="task-2----advanced-task">Task 2 -  Advanced Task</h2>
+<p><strong>If you manage to complete the below task, email me your Github link to the repository</strong></p>
+<ul>
+<li>Using semantic HTML and CSS3 layout the below mock up</li>
+<li>It should be pixel perfect, notice how the subsection underline does not span the whole heading </li>
+<li>You can find the mock up  <a href="assets/task_image.png">here</a></li>
+<li>You can find the main image <a href="assets/main_picture.jpg">here</a></li>
+</ul>
+<p><img src="assets/task_image.png" alt=""></p>
+<p><strong>You should ensure you use the following techniques:</strong></p>
+<ul>
+<li>Create a GitHub repo and use it to store your work</li>
+<li>The the main content should be in a wrapper <code>div</code> set to a width of 980px and alined to the centre </li>
+<li>Add a white to grey gradient to the wrapper, work out how make the gradient resemble the mock up above </li>
+<li>Add a drop shadow to the photo </li>
+<li>You should use the following HTML5 tags <code>&lt;section&gt;</code> , <code>&lt;aside&gt;</code>, <code>&lt;header&gt;</code></li>
 </ul>
 
                                 
@@ -381,14 +418,10 @@
 
             
                 
-                <a href="../week2/practical.html" class="navigation navigation-prev " aria-label="Previous page: Practical">
+                <a href="notes.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Notes">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="notes.html" class="navigation navigation-next " aria-label="Next page: Notes">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -397,7 +430,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Week 3 - Using Styles and Identifying Different Elements","level":"1.5","depth":1,"next":{"title":"Notes","level":"1.5.1","depth":2,"path":"sessions/week3/notes.md","ref":"sessions/week3/notes.md","articles":[]},"previous":{"title":"Practical","level":"1.4.2","depth":2,"path":"sessions/week2/practical.md","ref":"sessions/week2/practical.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["codepen"],"pluginsConfig":{"codepen":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"sessions/week3/introduction.md","mtime":"2017-10-17T09:53:00.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-10-17T13:56:18.675Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Practical","level":"2.1.2","depth":2,"previous":{"title":"Notes","level":"2.1.1","depth":2,"path":"sessions/week4/notes.md","ref":"sessions/week4/notes.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["codepen"],"pluginsConfig":{"codepen":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"sessions/week4/practical.md","mtime":"2017-10-17T09:53:00.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-10-17T13:56:18.675Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
