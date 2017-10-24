@@ -2,7 +2,7 @@
 
 ##Task 1 - Using Semantic HTML
 
-The purpose of this task is to understand semantic HTML elements and also gain a greater understanding of using floats to lay out a HTML page. 
+The purpose of this task is to understand semantic HTML elements and also gain a greater understanding of using floats to lay out a HTML page. Furthermore you will be trying to focus on atomic component design. 
 
 **Set up**
 
