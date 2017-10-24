@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Week 4 - CSS and Layouts · GitBook</title>
+        <title>Practical · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -57,10 +57,8 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="notes.html" />
     
-    
-    <link rel="prev" href="../week3/practical.html" />
+    <link rel="prev" href="notes.html" />
     
 
     </head>
@@ -250,9 +248,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.6" data-path="notes.html">
+        <li class="chapter " data-level="1.6" data-path="../week4/notes.html">
             
-                <a href="notes.html">
+                <a href="../week4/notes.html">
             
                     
                     Week 4 - CSS and Layouts
@@ -264,9 +262,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.6.1" data-path="notes.html">
+        <li class="chapter " data-level="1.6.1" data-path="../week4/notes.html">
             
-                <a href="notes.html">
+                <a href="../week4/notes.html">
             
                     
                     Notes
@@ -277,9 +275,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.2" data-path="practical.html">
+        <li class="chapter " data-level="1.6.2" data-path="../week4/practical.html">
             
-                <a href="practical.html">
+                <a href="../week4/practical.html">
             
                     
                     Practical
@@ -302,9 +300,9 @@
         
         
     
-        <li class="chapter " data-level="2.1" data-path="../week5/notes.html">
+        <li class="chapter " data-level="2.1" data-path="notes.html">
             
-                <a href="../week5/notes.html">
+                <a href="notes.html">
             
                     
                     Week 5 - Modular Design and Semantic HTML
@@ -316,9 +314,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.1.1" data-path="../week5/notes.html">
+        <li class="chapter " data-level="2.1.1" data-path="notes.html">
             
-                <a href="../week5/notes.html">
+                <a href="notes.html">
             
                     
                     Notes
@@ -329,9 +327,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.2" data-path="../week5/practical.html">
+        <li class="chapter active" data-level="2.1.2" data-path="practical.html">
             
-                <a href="../week5/practical.html">
+                <a href="practical.html">
             
                     
                     Practical
@@ -377,7 +375,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >Week 4 - CSS and Layouts</a>
+        <a href="../.." >Practical</a>
     </h1>
 </div>
 
@@ -392,166 +390,40 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="week-4">Week 4</h1>
-<h2 id="extending-the-knowledge-of-css-selectors">Extending the knowledge of CSS selectors</h2>
+                                <h1 id="session-5-semantic-html-task">Session 5 Semantic HTML Task</h1>
+<h2 id="task-1---using-semantic-html">Task 1 - Using Semantic HTML</h2>
+<p>The purpose of this task is to understand semantic HTML elements and also gain a greater understanding of using floats to lay out a HTML page.</p>
+<p>Furthermore you will be trying to focus on atomic component design. </p>
+<p><strong>Set up</strong></p>
 <ul>
-<li>We can have different types of selectors </li>
-<li><p>Element names as selectors</p>
-<pre><code class="lang-html">     p {   
-          color: red;
-     }
-</code></pre>
-</li>
-<li><p>If we want we can group selectors together. For instance, we might want all our headings to be grey</p>
-<pre><code class="lang-html">  h1, h2, h3, h4, h5, h6 {
-      color: grey;    
-  }
-</code></pre>
-</li>
-<li><p>We can have class <code>.</code> and id selectors <code>#</code></p>
-<pre><code class="lang-html">  .section {
-      font-size: 20px;
-  }
-
-  #footer  {
-      font-size: 10px;
-  }
-</code></pre>
-</li>
+<li>Download the task from <a href="https://github.com/joeappleton18/cda400/raw/master/sessions/week5/assets/session6.zip" target="_blank">here</a></li>
+<li>Extract it inside your <code>internet_tech</code> folder</li>
+<li>The resulting folder will be called <code>session6</code></li>
+<li>Open <code>index.html</code> within your favourite text editor and make sure you understand how the semantic HTML elements are laid out</li>
+<li>It should currently look like the below image in your browser:   </li>
 </ul>
-<h2 id="css-pseudo-elements">CSS Pseudo-elements</h2>
+<p><img src="assets/task_before_image.png" alt="image"> </p>
 <ul>
-<li><p>Rather than having to apply class and id&apos;s to elements, we can save ourself time by targeting them using an elements children by using a <code>pseudo-element</code> </p>
-<pre><code class="lang-html">      h1:before {
-            content:url(smiley.gif);
-
-     }
-</code></pre>
-<pre><code class="lang-html">      p::first-letter {
-          color: #red;
-          font-size: xx-large;
-    }
-</code></pre>
-</li>
+<li>Open up the <code>css/main.css</code> file and follow the steps in <code>/* .. */</code> comments</li>
+<li>These steps will guide you through the style sheet implementation. If done correctly your page should roughly resemble the below image</li>
+<li>If it does not look like the image below, make the necessary tweaks to your CSS</li>
 </ul>
-<h2 id="css-pseudo-classes">CSS Pseudo-classes</h2>
+<p><img src="assets/task_after_image.png" alt="image"> </p>
+<p><strong>Tip</strong><br>Remember we use <code>margin: 0 auto</code> to align a block level element to the centre. </p>
+<h2 id="task-2---horizontal-navigation-bar">Task 2 - Horizontal Navigation Bar</h2>
+<p>Add a horizontal navigation bar to the <code>&lt;header&gt;</code> section of your page. Remember to use a <code>&lt;ul&gt;</code> list to group together the <code>&lt;a&gt;</code> elements.</p>
+<h2 id="task-3---links">Task 3 - Links</h2>
+<p>Add some pseudo classes to the links. </p>
+<h2 id="task-4---more-css3-optional">Task 4 - More CSS3 (Optional)</h2>
+<p>You should have already used the CSS3 properties <code>border</code> and <code>radius</code> at this point. This task requires you to implement at least 2 further CSS3 properties into your page.</p>
+<p>You&apos;ll need to:</p>
 <ul>
-<li>We can use these CSS classes to add special effects to elements themselves or a special state of the element </li>
+<li>Learn about the different types of CSS3 rules <a href="http://code.tutsplus.com/tutorials/10-css3-properties-you-need-to-be-familiar-with--net-16417" target="_blank">Here is a great resource</a></li>
+<li>Pick out some properties that interest you</li>
+<li>Implement them into your webpage </li>
 </ul>
-<ul>
-<li><p><code>:hover</code> the user has the mouse over the element  </p>
-</li>
-<li><p><code>:active</code> the element is being activated (e.g. clicked)</p>
-</li>
-<li><p><code>:visited</code> a link has been visited</p>
-</li>
-<li><p><code>:focus</code> the element has the keyboard as its focus</p>
-</li>
-</ul>
-<h1 id="basic-page-layout">Basic Page Layout</h1>
-<h2 id="css-display-property">CSS display Property</h2>
-<ul>
-<li><p>CSS has two main ways of displaying elements</p>
-<ul>
-<li><p><code>display: block</code></p>
-</li>
-<li><p><code>display: inline</code></p>
-</li>
-</ul>
-</li>
-<li>An image is a inline element by default, however often you want an image to display on it&apos;s own line. In this case we can change the <code>display</code> property to <code>block</code></li>
-<li><p>For example, here&apos;s how we centre align an image:</p>
-<pre><code class="lang-html">  .displayed {
-       display: block; 
-       margin-left: auto; 
-       margin-right: auto;
-   }
-</code></pre>
-</li>
-<li><p>We can then assign the display class to an image:</p>
-<pre><code class="lang-html">  <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;displayed&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;...&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;...&quot;</span>  /&gt;</span>
-</code></pre>
-</li>
-<li><p>We can also use the shorthand margin property to achieve the same result:</p>
-<pre><code class="lang-html">  img.displayed 
-  {  
-         display: block;
-         margin: 0 auto;  
-  }
-</code></pre>
-</li>
-</ul>
-<h2 id="margins">Margins</h2>
-<ul>
-<li><p>Margin values can be specified either on all sides or on individual sides</p>
-</li>
-<li><p>single value for each margin: top, left, bottom and right, e.g. <code>margin:10px;</code></p>
-</li>
-<li><p>two values: 1st=top &amp; bottom; 2nd=left &amp; right, e.g. <code>margin:10px 5px;</code></p>
-</li>
-<li><p>four values: top, right, bottom and left, e.g. <code>margin:10px 5px 15px 20px;</code></p>
-</li>
-</ul>
-<h2 id="width-and-height">Width and Height</h2>
-<ul>
-<li><p>The width and height properties can be specified using percentage or length values (e.g. pixels or %)</p>
-</li>
-<li><p>Specifying widths of elements in % means they will will shrink or grow so they are always in scale with the screen size  </p>
-<pre><code class="lang-html">   p {width: 40%;}
-</code></pre>
-</li>
-</ul>
-<h2 id="position-property">Position Property</h2>
-<pre><code>    selector {
-        position: &lt;value&gt;
-    }
-</code></pre><ul>
-<li><p>static &#x2013; <strong>default value</strong>  i.e. elements are laid out in the normal flow</p>
-</li>
-<li><p>relative &#x2013; an element is moved relative to its place in the normal flow according to its top and left values</p>
-</li>
-<li><p>absolute &#x2013; an element is taken completely out of the flow and then positioned with respect to the top and left of the first element that contains it. Used for sticky footers, try to avoid in any other case. </p>
-</li>
-<li><p>fixed &#x2013; an element remains exactly where it is when the page is scrolled</p>
-</li>
-</ul>
-<h2 id="default-static-position-of-2-divs">Default static position of 2 DIVS</h2>
-<p><img src="assets/static_divs.png" alt=""></p>
-<pre><code>#wrapper{
-width: 80%
-}
-#box1 {
-     width: 20%;
-}
-#box2 {   
-   width: 20%;   
-}
-</code></pre><h2 id="adding-a-float-left">Adding a float left</h2>
-<pre><code>#wrapper{
-width: 80%
-}
-#box1 {
-     width: 20%;
-  float: left;
-}
-#box2 {   
-   width: 20%; 
-   float: left;   
-}
-</code></pre><p><img src="assets/floated_lef_divs.png" alt=""></p>
-<h2 id="adding-a-float-to-the-left-and-right">Adding a float to the left and right</h2>
-<pre><code>#wrapper{
-width: 80%
-}
-#box1 {
-     width: 20%;
-  float: left;
-}
-#box2 {   
-   width: 20%; 
-   float: right;   
-}
-</code></pre><p><img src="assets/floated_left_right_divs.png" alt=""></p>
+<h2 id="task-5---validate-your-html-code">Task 5 - Validate Your HTML Code</h2>
+<p>Ensure your HTML code is valid using the <a href="https://validator.w3.org/" target="_blank">W3C Validator</a>. Don&apos;t forget to keep this habit up!</p>
 
                                 
                                 </section>
@@ -579,14 +451,10 @@ width: 80%
 
             
                 
-                <a href="../week3/practical.html" class="navigation navigation-prev " aria-label="Previous page: Practical">
+                <a href="notes.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Notes">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="notes.html" class="navigation navigation-next " aria-label="Next page: Notes">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -595,7 +463,7 @@ width: 80%
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Week 4 - CSS and Layouts","level":"1.6","depth":1,"next":{"title":"Notes","level":"1.6.1","depth":2,"path":"sessions/week4/notes.md","ref":"sessions/week4/notes.md","articles":[]},"previous":{"title":"Practical","level":"1.5.2","depth":2,"path":"sessions/week3/practical.md","ref":"sessions/week3/practical.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["codepen"],"pluginsConfig":{"codepen":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"sessions/week4/notes.md","mtime":"2017-10-24T06:19:46.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-10-24T10:03:28.385Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Practical","level":"2.1.2","depth":2,"previous":{"title":"Notes","level":"2.1.1","depth":2,"path":"sessions/week5/notes.md","ref":"sessions/week5/notes.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["codepen"],"pluginsConfig":{"codepen":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"sessions/week5/practical.md","mtime":"2017-10-24T06:21:07.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-10-24T10:03:28.385Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
