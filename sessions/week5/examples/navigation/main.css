@@ -1,0 +1,6 @@
+#header ul li {
+    
+    list-style: none; /** removes bullet points 8*/
+    display: inline; /*flattens the list **/
+    margin-left: 10px;  /** spaces out the menu **/
+}
