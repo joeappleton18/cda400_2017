@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Week 5 - Modular Design and Semantic HTML · GitBook</title>
+        <title>Practical · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="notes.html" />
+    <link rel="next" href="../week9/session9.1_introduction.html" />
     
     
-    <link rel="prev" href="../week4/practical.html" />
+    <link rel="prev" href="notes.html" />
     
 
     </head>
@@ -302,9 +302,9 @@
         
         
     
-        <li class="chapter active" data-level="2.1" data-path="notes.html">
+        <li class="chapter " data-level="2.1" data-path="../week5/notes.html">
             
-                <a href="notes.html">
+                <a href="../week5/notes.html">
             
                     
                     Week 5 - Modular Design and Semantic HTML
@@ -316,9 +316,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="2.1.1" data-path="notes.html">
+        <li class="chapter " data-level="2.1.1" data-path="../week5/notes.html">
             
-                <a href="notes.html">
+                <a href="../week5/notes.html">
             
                     
                     Notes
@@ -329,9 +329,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.2" data-path="practical.html">
+        <li class="chapter " data-level="2.1.2" data-path="../week5/practical.html">
             
-                <a href="practical.html">
+                <a href="../week5/practical.html">
             
                     
                     Practical
@@ -445,9 +445,9 @@
         
         
     
-        <li class="chapter " data-level="5.1" data-path="../week8/notes.html">
+        <li class="chapter " data-level="5.1" data-path="notes.html">
             
-                <a href="../week8/notes.html">
+                <a href="notes.html">
             
                     
                     Week 8 - Styling HTML5 Forms
@@ -459,9 +459,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="5.1.1" data-path="../week8/notes.html">
+        <li class="chapter " data-level="5.1.1" data-path="notes.html">
             
-                <a href="../week8/notes.html">
+                <a href="notes.html">
             
                     
                     Notes
@@ -472,9 +472,9 @@
             
         </li>
     
-        <li class="chapter " data-level="5.1.2" data-path="../week8/task.html">
+        <li class="chapter active" data-level="5.1.2" data-path="task.html">
             
-                <a href="../week8/task.html">
+                <a href="task.html">
             
                     
                     Practical
@@ -630,7 +630,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >Week 5 - Modular Design and Semantic HTML</a>
+        <a href="../.." >Practical</a>
     </h1>
 </div>
 
@@ -645,139 +645,28 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="elegant-source-code">Elegant Source Code</h1>
-<p>This week is all about how to make our HTML/CSS more readable and also reusable. </p>
-<h1 id="atomic-design">Atomic Design</h1>
-<p><img src="assets/atomicdesign.png" alt=""></p>
+                                <h1 id="weekly-task---laying-out-forms">Weekly Task - Laying out Forms</h1>
+<p>The purpose of this task is to increase your understanding of how to layout forms. </p>
+<h1 id="1-setup">1 Setup</h1>
 <ul>
-<li>Atomic design was a idea coined by <a href="http://atomicdesign.bradfrost.com/chapter-2/" target="_blank">Brad Frost</a> </li>
-<li>The the concept is to break the page down small HTML building blocks that can be used to create large reusable components (molecules/organisms) that can be reused</li>
-</ul>
-<h1 id="using-the-descendant-selector">Using the descendant selector</h1>
-<ul>
-<li>If we&apos;re following a atomic design methodology. We can use the dependent selectors to style small page elements (molecules/atems)</li>
-<li>The descendant selector matches all elements that are descendants of given element</li>
-<li>We can use it to avoid the over use of id&#x2019;s and class attributes</li>
-<li>It therefore lends itself very well to modular/atomic design </li>
-</ul>
-<p><strong>css</strong></p>
-<pre><code class="lang-html">#contact_section  {
-     font-color: grey;
-}
-
-#contact_section p{
-      font-size: 10px        
-}
-
-#contact_section h1 {
-  font-size: 27px
-}
-</code></pre>
-<p><strong>html</strong></p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&#x201C;contact_section&#x201D;</span>&gt;</span>
-
-   <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>  Grey font size 27px <span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-
-  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span> This will be grey and font size 10 px<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>   I&#x2019;ll also be grey and font size 10 px <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span> <span class="hljs-comment">&lt;!-- /#contact_section --&gt;</span>
-</code></pre>
-<ul>
-<li>In the above example, notice how we can use the <code>#contact_section</code> selector by itself to set defaults. In this case we&apos;ve set the font colour to grey</li>
-</ul>
-<h1 id="lists-for-navigation-bars">Lists For Navigation Bar&#x2019;s</h1>
-<ul>
-<li><p>List are a great way to group common elements, therefor they are the go to when it comes to implementing menus in HTML. </p>
+<li><p>Create the file <code>form_task.html</code> and store it in a safe place on your u drive. Copy the starting HTML source code from here <code>https://raw.githubusercontent.com/sirus21/Internet_technology/master/session8/practicals/session_8_main_task.html</code>
+and past it into <code>form_task.html</code>.</p>
 </li>
-<li><p>We can use the HTML descendant selector to target child elements of our <code>&lt;ul&gt;</code></p>
+<li><p>Include create an external css file and <code>&lt;link&gt;</code> it to <code>form_task.html</code></p>
 </li>
 </ul>
-<p><img src="assets/menu_example.jpg" alt=""></p>
-<p><strong>html</strong></p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;header&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span> Home <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span> Contact <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span> About <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span> <span class="hljs-comment">&lt;!-- /#header --&gt;</span>
-</code></pre>
-<p><strong>css</strong></p>
-<pre><code>#header ul li {
-
-    list-style: none; /** removes bullet points 8*/
-    display: inline; /*flattens the list **/
-    margin-left: 10px;  /** spaces out the menu **/
-}
-</code></pre><h1 id="html5-semantic-elements">HTML5 Semantic Elements</h1>
+<h1 id="2-lay-out-the-form">2 Lay out the form</h1>
+<p>As you can see, currently no consideration has been given to the layout of the form. Using the techniques we covered in the lecture, your task is to lay the form out. As a minimum you should:</p>
 <ul>
-<li>HTML5 gives us the option to use HTML elements that are more expressive. This is good news, as we  don&apos;t have to use <code>&lt;div&gt;</code>&apos;s for everything</li>
-<li>We can replace now <code>&lt;div&gt;</code>&#x2019;s with more meaningful tags</li>
-<li>E.G. Instead of using <code>&lt;div id=&#x201C;header&#x201D;&gt;</code> we can use the <header> tag<h2 id="html5-semantic-elements-examples">HTML5 Semantic Elements Examples</h2>
-</header></li>
+<li>Use <code>&lt;p&gt;</code> tags to divide inputs and labels into related lines</li>
+<li>Use <code>fieldset</code> and <code>legend</code> to group together common inputs</li>
+<li>Ensure inputs and labels are aligned correctly</li>
+<li>Style the submit button</li>
 </ul>
-<p><img src="assets/semantic_html.png" alt=""></p>
-<ul>
-<li><code>&lt;header&gt;</code>: defines a header for a document or a section<ul>
-<li><code>&lt;nav&gt;</code> - defines a container for navigation links</li>
-<li><code>&lt;section&gt;</code> - defines a section in a document</li>
-<li><code>&lt;article&gt;</code> - defines an independent self-contained article</li>
-<li><code>&lt;aside&gt;</code> - defines content aside from the content (like a sidebar)
-<code>&lt;footer&gt;</code> - defines a footer for a document or a section</li>
-</ul>
-</li>
-</ul>
-<h2 id="example-of-a-html-5-layout">Example of a HTML 5 Layout</h2>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
- <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&#x201C;wrapper&#x201D;</span>&gt;</span>  
-    <span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Header<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">aside</span>&gt;</span>
-         <span class="hljs-tag">&lt;<span class="hljs-name">nav</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span> This is your left navigation &#x2026; <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-         <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">aside</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">section</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Subheading<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span> This is the content part &#x2026; <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">footer</span>&gt;</span>
-           <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span> Footer <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span> <span class="hljs-comment">&lt;!-- ./wrapper --&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-</code></pre>
-<h1 id="css3-gradient-and-radius">CSS3 Gradient And Radius</h1>
-<ul>
-<li>CSS3 is the latest version of CSS</li>
-<li>It goes hand in hand with HTML5</li>
-<li>There are many new exciting features</li>
-<li>For example, it&apos;s now easy to apply effects to our html elements </li>
-<li>Look how easy it is to create an interesting effect on the below <code>&lt;div&gt;</code>, by using the radius and gradient property. </li>
-</ul>
-<p><img src="assets/css3.png" alt=""></p>
-<pre><code class="lang-css"><span class="hljs-selector-class">.box1</span>{
-    <span class="hljs-attribute">width</span>: <span class="hljs-number">100px</span>;    
-    <span class="hljs-attribute">height</span>: <span class="hljs-number">100px</span>;    
-    <span class="hljs-attribute">border</span>: <span class="hljs-number">2px</span> solid black;    
-    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">10px</span>;    
-    <span class="hljs-attribute">background</span>:   <span class="hljs-built_in">linear-gradient</span>(red, blue);
-}
-</code></pre>
-<h2 id="can-i-use-it">Can I Use It</h2>
-<ul>
-<li>Older browsers may not support the latest CSS features </li>
-<li>It&apos;s important you know which browsers you need to be supported</li>
-<li>You can check for browser support using <a href="http://caniuse.com/#feat=css-gradients" target="_blank">http://caniuse.com/#feat=css-gradients</a></li>
-</ul>
-<p><img src="assets/can_i_use_it.png" alt="assets/can_i_use_it.png"></p>
-<blockquote>
-<blockquote>
-<p><a href="http://caniuse.com/" target="_blank">http://caniuse.com/</a> support for css3</p>
-</blockquote>
-</blockquote>
+<h1 id="3-htm5-validation">3 HTM5 validation</h1>
+<p>Apply an HTML5 validation to your form and use the <code>:invalid</code> or <code>:valid</code>  pseudo class so users know if their input is valid.  </p>
+<h1 id="4-validate-your-html">4 Validate your HTML</h1>
+<p>Make sure your HTML is valid.</p>
 
                                 
                                 </section>
@@ -805,12 +694,12 @@
 
             
                 
-                <a href="../week4/practical.html" class="navigation navigation-prev " aria-label="Previous page: Practical">
+                <a href="notes.html" class="navigation navigation-prev " aria-label="Previous page: Notes">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="notes.html" class="navigation navigation-next " aria-label="Next page: Notes">
+                <a href="../week9/session9.1_introduction.html" class="navigation navigation-next " aria-label="Next page: Week 9 - Search Engine Optimisation">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -821,7 +710,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Week 5 - Modular Design and Semantic HTML","level":"2.1","depth":1,"next":{"title":"Notes","level":"2.1.1","depth":2,"path":"sessions/week5/notes.md","ref":"sessions/week5/notes.md","articles":[]},"previous":{"title":"Practical","level":"1.6.2","depth":2,"path":"sessions/week4/practical.md","ref":"sessions/week4/practical.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["codepen"],"pluginsConfig":{"codepen":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"sessions/week5/notes.md","mtime":"2017-11-20T15:03:46.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-11-21T11:06:13.000Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Practical","level":"5.1.2","depth":2,"next":{"title":"Week 9 - Search Engine Optimisation","level":"5.2","depth":1,"path":"sessions/week9/session9.1_introduction.md","ref":"sessions/week9/session9.1_introduction.md","articles":[{"title":"How Search Engines Work","level":"5.2.1","depth":2,"path":"sessions/week9/session9.2_how_search_engines_work.md","ref":"sessions/week9/session9.2_how_search_engines_work.md","articles":[]},{"title":"Search Engine Optimisation","level":"5.2.2","depth":2,"path":"sessions/week9/session9.3_seo.md","ref":"sessions/week9/session9.3_seo.md","articles":[]},{"title":"On Page SEO","level":"5.2.3","depth":2,"path":"sessions/week9/session9.4_onpage_seo.md","ref":"sessions/week9/session9.4_onpage_seo.md","articles":[]},{"title":"Off Page SEO","level":"5.2.4","depth":2,"path":"sessions/week9/session9.5_offpage_seo.md","ref":"sessions/week9/session9.5_offpage_seo.md","articles":[]},{"title":"Key Word And Competitor Research","level":"5.2.5","depth":2,"path":"sessions/week9/session9.6_key_word.md","ref":"sessions/week9/session9.6_key_word.md","articles":[]},{"title":"Optimising for Social Media","level":"5.2.6","depth":2,"path":"sessions/week9/session9.7_social_media.md","ref":"sessions/week9/session9.7_social_media.md","articles":[]},{"title":"Practical - Make a SEO friendly website","level":"5.2.7","depth":2,"path":"sessions/week9/task.md","ref":"sessions/week9/task.md","articles":[]}]},"previous":{"title":"Notes","level":"5.1.1","depth":2,"path":"sessions/week8/notes.md","ref":"sessions/week8/notes.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["codepen"],"pluginsConfig":{"codepen":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"sessions/week8/task.md","mtime":"2017-11-20T15:01:53.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-11-21T11:06:13.000Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
