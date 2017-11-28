@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/joeappleton18/cda400#readme",
   "dependencies": {
-    "gitbook-plugin-codepen": "^0.1.2"
+    "gitbook-plugin-codepen": "^0.1.2",
+    "vee-validate": "^2.0.0-rc.23"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
